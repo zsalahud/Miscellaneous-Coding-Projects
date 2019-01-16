@@ -1,4 +1,6 @@
-// Java implementation of the Row Reduction Algorithm, as encountered in Linear Algebra
+import java.util.*;
+
+// Java implementation of the Row Reduction Algorithm, as encountered in Linear Algebra, using basic arrays.
 public class RRA{
   
 //  public int[][] row_reducer(int[][] array){
@@ -11,31 +13,28 @@ public class RRA{
 //    
 //  }
 //  
-  
+//  
   
   public static void main(String[] args){
-    int[][] matrix = {{1, 1, 1, -1}, {1, 2, 4, 3}};
-    int[][] goal_matrix = {{1, 0, -2, -5}, {0, 1, 3, 4}};
+    int[][] matrix = {{0, 3, -6, 6, 4, -5},{3, -7, 8, -5, 8, 9},{3, -9, 12, -9, 6, 15}};
+    int[][] goal_matrix = {{3, -9, 12, -9, 6, 15},{0, 2, -4, 4, 2, -6},{0, 0, 0, 0, 1, 4}};
     System.out.println("Original Matrix:");
     for (int i = 0; i < matrix.length; i++){
-      for (int j = 0; j < matrix.length; j++){
-        System.out.print(matrix[i][j] + " ");
-      }
+      System.out.print(Arrays.toString(matrix[i]) + " ");
       System.out.println();
     }
-    System.out.println();
+  
     System.out.println("Goal Matrix:");
     for (int i = 0; i < goal_matrix.length; i++){
-      for (int j = 0; j < goal_matrix.length; j++){
-        System.out.print(goal_matrix[i][j] + " ");
-      }
-      System.out.println();
+        System.out.print(Arrays.toString(goal_matrix[i]) + " ");
+        System.out.println();
     }
-  }
   
   
   
   
   
   
+  
+}
 }
