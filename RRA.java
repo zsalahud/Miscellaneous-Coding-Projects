@@ -8,7 +8,13 @@ public class RRA{
 
     int[][] matrix = new int[array.length][array[0].length];
     
-    
+    for (int i = 0; i < matrix.length; i++)
+    {
+        for (int j = 0; j < matrix[j].length; j++)
+        {
+            matrix[i][j] = array[i][j];
+        }
+    }
     
     
     
