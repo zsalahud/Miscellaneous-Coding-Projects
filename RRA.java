@@ -43,10 +43,5 @@ public class RRA{
     }
     return matrix;
   }
-  
-  public static void main(String[] args){
-    int[][] x = {{3,5,-1,10},{1,4,1,7},{9,0,2,1}};
-    System.out.println(Arrays.deepToString(row_reducer(x)));
 
-  }
 }
